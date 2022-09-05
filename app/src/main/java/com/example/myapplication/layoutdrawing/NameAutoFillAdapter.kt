@@ -38,7 +38,6 @@ class NameAutoFillAdapter(
     }
 
 
-
     val filterResult = object : Filter(){
         override fun performFiltering(p0: CharSequence?): FilterResults {
             val result=FilterResults()

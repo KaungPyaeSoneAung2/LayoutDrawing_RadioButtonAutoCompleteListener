@@ -4,12 +4,19 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/drawable/coner_style.xml" value="0.1" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/drawable/ic_arrow_down_24.xml" value="0.2265" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/drawable/ic_arrow_drop_up_24.xml" value="0.2265" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/drawable/ic_arrow_up_24.xml" value="0.2265" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.2265" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/drawable/ic_baseline_qr_code_scanner_24.xml" value="0.309" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/drawable/ic_camera_24.xml" value="0.2265" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/drawable/ic_kidsboyicon.xml" value="0.2265" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/drawable/ic_save_24.xml" value="0.2265" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/layout/activity_payment_system_types.xml" value="0.33" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/layout/activity_payment_types.xml" value="0.33" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/layout/fragment_name_fill.xml" value="0.22" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/layout/layout_name_auto_fill.xml" value="0.598116169544741" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/layout/layout_payment_items.xml" value="1.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/layout/login_layout.xml" value="0.33" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/layout/order_address_confirm.xml" value="0.33" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/LayoutDrawing/app/src/main/res/layout/order_address_items.xml" value="0.5482014388489208" />
