@@ -52,6 +52,7 @@
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusBottomEnd="10dp"
+        app:hintTextColor="@color/cornerBlue"
         >
         <AutoCompleteTextView
             android:id="@+id/tvBuyerName"
@@ -125,6 +126,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:layout_constraintTop_toBottomOf="@id/cvBuyer"
         app:boxStrokeColor="@color/cornerBlue"
+        app:hintTextColor="@color/cornerBlue"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/et_ph_no"
@@ -147,6 +149,7 @@
         android:layout_marginHorizontal="16dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         app:boxStrokeWidth="1dp"
+        app:hintTextColor="@color/cornerBlue"
         app:boxStrokeColor="@color/cornerBlue"
         app:layout_constraintTop_toBottomOf="@id/til_ph_no">
         <com.google.android.material.textfield.TextInputEditText
