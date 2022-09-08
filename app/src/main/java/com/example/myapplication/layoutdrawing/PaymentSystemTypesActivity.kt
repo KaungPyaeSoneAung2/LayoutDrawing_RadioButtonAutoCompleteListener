@@ -2,10 +2,12 @@ package com.example.myapplication.layoutdrawing
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.myapplication.layoutdrawing.adapter.PaymentSystemAdapter
 import com.example.myapplication.layoutdrawing.databinding.ActivityPaymentSystemTypesBinding
+import com.example.myapplication.layoutdrawing.models.PaymentSystemModel
+
 class PaymentSystemTypesActivity : AppCompatActivity(), RecyclerClickInterface {
     var defaultList=ArrayList<PaymentSystemModel>()
     var bankList=ArrayList<PaymentSystemModel>()
@@ -29,7 +31,7 @@ class PaymentSystemTypesActivity : AppCompatActivity(), RecyclerClickInterface {
 
         binding.rvDefaultPayment.layoutManager=LinearLayoutManager(this)
         binding.rvDefaultPayment.setHasFixedSize(true)
-        //,this
+
         val defaultPayment = PaymentSystemAdapter(defaultList)
         binding.rvDefaultPayment.adapter = defaultPayment
 

@@ -1,13 +1,9 @@
-package com.example.myapplication.layoutdrawing
+package com.example.myapplication.layoutdrawing.adapter
 
-import android.content.Context
-import android.util.Log
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
+import com.example.myapplication.layoutdrawing.models.PaymentSystemModel
 import com.example.myapplication.layoutdrawing.databinding.LayoutPaymentItemsBinding
 
 //, val recyclerClickInterface: RecyclerClickInterface

@@ -1,16 +1,17 @@
-package com.example.myapplication.layoutdrawing
+package com.example.myapplication.layoutdrawing.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.myapplication.layoutdrawing.databinding.OrderAddressItemsBinding
+import com.example.myapplication.layoutdrawing.models.ItemLayoutModel
 
-class AddressListAdapter(val itermLayout: List<itemLayoutModel>)
+class AddressListAdapter(val itermLayout: List<ItemLayoutModel>)
     :RecyclerView.Adapter<AddressListAdapter.AddressHolder>() {
     private var selectedItem=-1
 
 inner class AddressHolder(private val binding: OrderAddressItemsBinding):RecyclerView.ViewHolder(binding.root){
-    fun bind(itermLayout: itemLayoutModel){
+    fun bind(itermLayout: ItemLayoutModel){
 
         binding.tvAddressType.text=itermLayout.addressType
         binding.tvCity.text=itermLayout.city
@@ -38,7 +39,7 @@ inner class AddressHolder(private val binding: OrderAddressItemsBinding):Recycle
         return (AddressHolder(OrderAddressItemsBinding.inflate(LayoutInflater.from(parent.context),parent,false)))
     }
 
-    override fun onBindViewHolder(holder: AddressListAdapter.AddressHolder, position: Int) {
+    override fun onBindViewHolder(holder: AddressHolder, position: Int) {
 
         holder.bind(itermLayout[position])
         }

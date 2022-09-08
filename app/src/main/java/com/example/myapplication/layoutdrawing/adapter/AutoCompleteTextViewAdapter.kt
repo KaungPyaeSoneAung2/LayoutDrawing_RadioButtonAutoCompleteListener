@@ -1,4 +1,4 @@
-package com.example.myapplication.layoutdrawing
+package com.example.myapplication.layoutdrawing.adapter
 
 import android.content.Context
 import android.util.Log
@@ -6,13 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.*
+import com.example.myapplication.layoutdrawing.R
+import com.example.myapplication.layoutdrawing.models.UserNameModel
 
-class NameAutoFillAdapter(
+class AutoCompleteTextViewAdapter(
     val mContext:Context,
     val mlayoutResourceId:Int,
-    private val userLiser: ArrayList<UserNameItems>) : ArrayAdapter<UserNameItems>(mContext,mlayoutResourceId,userLiser){
+    private val userLiser: ArrayList<UserNameModel>) : ArrayAdapter<UserNameModel>(mContext,mlayoutResourceId,userLiser){
 
-    private val userList = ArrayList<UserNameItems>(userLiser)
+    private val userList = ArrayList<UserNameModel>(userLiser)
     override fun getFilter(): Filter {
         return filterResult
     }
@@ -41,7 +43,7 @@ class NameAutoFillAdapter(
     val filterResult = object : Filter(){
         override fun performFiltering(p0: CharSequence?): FilterResults {
             val result=FilterResults()
-            val suggestions=ArrayList<UserNameItems>()
+            val suggestions=ArrayList<UserNameModel>()
 
             if(p0.isNullOrEmpty()){
                 suggestions.addAll(userList)
@@ -64,14 +66,14 @@ class NameAutoFillAdapter(
 
         override fun publishResults(p0: CharSequence?, p1: FilterResults?) {
             userLiser.clear()
-            userLiser.addAll(p1?.values as List<UserNameItems>)
+            userLiser.addAll(p1?.values as List<UserNameModel>)
             notifyDataSetChanged()
             Log.d("Sleepy","Her is ${p1.values.toString()}")
 
         }
 
         override fun convertResultToString(resultValue: Any?): CharSequence {
-            val temp =resultValue as UserNameItems
+            val temp =resultValue as UserNameModel
             Log.d("Sleepy1","Her is $temp")
             return temp.userName
 

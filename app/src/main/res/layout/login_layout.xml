@@ -139,29 +139,29 @@
             android:inputType="phone"
             />
     </com.google.android.material.textfield.TextInputLayout>
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/til_mail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:startIconDrawable="@drawable/ic_email_icon"
-        app:startIconTint="@color/iconTextColor"
-        android:layout_marginHorizontal="16dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        app:boxStrokeWidth="1dp"
-        app:hintTextColor="@color/cornerBlue"
-        app:boxStrokeColor="@color/cornerBlue"
-        app:layout_constraintTop_toBottomOf="@id/til_ph_no">
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/et_mail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="အီးမေးလ် လိပ်စာ"
-            android:textColorHint="@color/iconTextColor"
-            android:nextFocusDown="@id/ibAddedCustomer"
-            android:inputType="textEmailAddress"
-            android:importantForAutofill="no" />
-    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:startIconDrawable="@drawable/ic_email_icon"
+                app:startIconTint="@color/iconTextColor"
+                android:layout_marginHorizontal="16dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:boxStrokeWidth="1dp"
+                app:hintTextColor="@color/cornerBlue"
+                app:boxStrokeColor="@color/cornerBlue"
+                app:layout_constraintTop_toBottomOf="@id/til_ph_no">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="အီးမေးလ် လိပ်စာ"
+                android:textColorHint="@color/iconTextColor"
+                android:nextFocusDown="@id/ibAddedCustomer"
+                android:inputType="textEmailAddress"
+                android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
 
 
     <com.google.android.material.button.MaterialButton

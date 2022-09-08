@@ -1,8 +1,8 @@
-package com.example.myapplication.layoutdrawing
+package com.example.myapplication.layoutdrawing.models
 
 import android.widget.RadioButton
 
-data class itemLayoutModel(
+data class ItemLayoutModel(
     val addressType:String,
     val city:String,
     val addresss:String,
