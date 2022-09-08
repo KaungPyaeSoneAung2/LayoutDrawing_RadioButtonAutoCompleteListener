@@ -8,7 +8,7 @@ import com.example.myapplication.layoutdrawing.adapter.AddressListAdapter
 import com.example.myapplication.layoutdrawing.databinding.OrderAddressConfirmBinding
 import com.example.myapplication.layoutdrawing.models.ItemLayoutModel
 
-class MainActivity : AppCompatActivity() {
+class AddressChooseActivity : AppCompatActivity() {
     private lateinit var binding: OrderAddressConfirmBinding
 
     var tempData=ArrayList<ItemLayoutModel>()
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
         dataAddingIntoTempData()
 
-        binding.rvListAddress.layoutManager=LinearLayoutManager(this@MainActivity)
+        binding.rvListAddress.layoutManager=LinearLayoutManager(this@AddressChooseActivity)
         binding.rvListAddress.setHasFixedSize(true)
         binding.rvListAddress.adapter= AddressListAdapter(tempData)
 

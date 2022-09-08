@@ -82,16 +82,6 @@ class PaymentSystemTypesActivity : AppCompatActivity(), RecyclerClickInterface {
     }
 
     fun listReveal(){
-//        binding.llDefaultText.setOnClickListener{
-//            if(binding.rvDefaultPayment.visibility==View.GONE)
-//            {
-//            binding.rvDefaultPayment.visibility= View.VISIBLE
-//            }
-//            else if(binding.rvDefaultPayment.visibility==View.VISIBLE)
-//            {
-//                binding.rvDefaultPayment.visibility= View.GONE
-//            }
-//        }
 
         binding.llBanks.setOnClickListener{
             if(binding.rvBanks.visibility==View.GONE)
